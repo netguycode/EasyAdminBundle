@@ -980,6 +980,11 @@
   dependencies:
     undici-types "~6.20.0"
 
+"@types/trusted-types@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
+
 "@types/yargs-parser@*":
   version "21.0.3"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.3.tgz#815e30b786d2e8f0dcd85fd5bcf5e1a04d008f15"
@@ -1612,6 +1617,13 @@ domhandler@^5.0.2, domhandler@^5.0.3:
   integrity sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==
   dependencies:
     domelementtype "^2.3.0"
+
+dompurify@^3.2.5:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.3.3.tgz#680cae8af3e61320ddf3666a3bc843f7b291b2b6"
+  integrity sha512-Oj6pzI2+RqBfFG+qOaOLbFXLQ90ARpcGG6UePL82bJLtdsa6CYJD7nmiU8MW9nQNOtCHV3lZ/Bzq1X0QYbBZCA==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
 
 domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
@@ -2732,10 +2744,12 @@ tom-select@^2.0.1:
     "@orchidjs/sifter" "^1.1.0"
     "@orchidjs/unicode-variants" "^1.1.2"
 
-trix@^2.1.4:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.8.tgz#b9383af8cd9c1a0a0818d6b4e0c9e771bf7fd564"
-  integrity sha512-y1h5mKQcjMsZDsUOqOgyIUfw+Z31u4Fe9JqXtKGUzIC7FM9cTpxZFFWxQggwXBo18ccIKYx1Fn9toVO5mCpn9g==
+trix@^2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.18.tgz#d87a5be64c10ecdab64f5af47f941b5318c08225"
+  integrity sha512-DWOdTsz3n9PO3YBc1R6pGh9MG1cXys/2+rouc/qsISncjc2MBew2UOW8nXh3NjUOjobKsXCIPR6LB02abg2EYg==
+  dependencies:
+    dompurify "^3.2.5"
 
 undici-types@~6.20.0:
   version "6.20.0"
